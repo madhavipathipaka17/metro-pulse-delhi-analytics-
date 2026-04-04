@@ -8,10 +8,13 @@ Original file is located at
 """
 
 #load json data from git
-import pandas as pd
-url="https://raw.githubusercontent.com/madhavipathipaka17/metro-pulse-delhi-analytics-/source_data/delhi_metro_trips.json"
 
-data=pd.read_json(url)
+import pandas as pd
+
+url = "https://raw.githubusercontent.com/madhavipathipaka17/metro-pulse-delhi-analytics-/main/source_data/delhi_metro_trips.json"
+
+data = pd.read_json(url)
+data
 
 data
 
@@ -25,6 +28,7 @@ data['from_station']=data['from_station'].str.strip()
 data['to_station']=data['to_station'].str.strip()
 data['from_station']=data['from_station'].str.lower().str.title()
 data['to_station']=data['to_station'].str.lower().str.title()
+
 data.to_csv("delhi_metro_trips.csv", index=False)
 
 data['ticket_type']=data['ticket_type'].replace('None', pd.NA)
@@ -46,8 +50,8 @@ data.to_csv("delhi_metro_trips.csv", index=False)
 count = (data['from_station'] == data['to_station']).sum()
 print(count)
 
+data = data.copy()
 data['date']=pd.to_datetime(data['date'],errors='coerce')
-
 data.to_csv("delhi_metro_trips.csv", index=False)
 
 data["date"].isna().sum()
@@ -56,7 +60,7 @@ numeric_cols = ['distance_km', 'fare', 'cost_per_passenger', 'passengers']
 
 for col in numeric_cols:
     data[col] = pd.to_numeric(data[col], errors='coerce')
-data.to_csv("delhi_metro_trips1.csv", index=False)
+data.to_csv("delhi_metro_trips.csv", index=False)
 
 data = data.drop_duplicates()
 
@@ -67,11 +71,7 @@ print(data.head())
 
 print(data[['from_station','to_station']].head(10))
 
-import pandas as pd
-
-# Load JSON from GitHub
-url = "https://raw.githubusercontent.com/madhavipathipaka17/metro-pulse-delhi-analytics-/source_data/delhi_metro_trips.json"
-data = pd.read_json(url)
+data.info()
 
 # Save as CSV
 data.to_csv("delhi_metro_trips.csv", index=False)
