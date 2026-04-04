@@ -1,0 +1,67 @@
+# ------------------------------
+# 🐍 Python
+# ------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Logs
+*.log
+
+# ------------------------------
+# 📊 Jupyter Notebook
+# ------------------------------
+.ipynb_checkpoints/
+
+# ------------------------------
+# 🗄️ Database / SQL
+# ------------------------------
+*.db
+*.sqlite3
+
+# ------------------------------
+# 🧪 Testing / Coverage
+# ------------------------------
+.coverage
+coverage.xml
+htmlcov/
+
+# ------------------------------
+# 🖥️ macOS System Files
+# ------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ------------------------------
+# 🧰 IDE / Editor
+# ------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ------------------------------
+# 📦 Environment Variables
+# ------------------------------
+.env
+
+# ------------------------------
+# 🚫 Optional: Ignore large/raw data files
+# (Uncomment if needed)
+# ------------------------------
+# source_data/*.json
+# cleaned_data/*.csv
