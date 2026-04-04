@@ -1,0 +1,46 @@
+The project will produce:
+
+A cleaned metro travel dataset
+
+
+A structured SQL database
+
+
+20 analytical SQL queries
+
+
+Insights into passenger demand, revenue trends, and travel behaviour.
+
+The following SQL queries will be used to analyze metro travel data.
+
+Route Analysis
+1. Which metro routes have the highest passenger traffic?
+2. Which routes generate the highest total revenue?
+3. What is the average fare for each route?
+4. Which routes have the longest travel distances?
+
+Station Analysis
+5. Which stations have the highest number of trip departures?
+6. Which stations receive the highest number of passengers?
+7. What are the top 10 most frequently used metro stations?
+8. Which station pairs are most frequently used for travel?
+
+Revenue Analysis
+9. What is the total revenue generated from all trips?
+10. What is the average fare per trip?
+11. Which routes generate the highest revenue per kilometer?
+
+12. Which ticket type generates the highest revenue?
+Passenger Analysis
+13. What is the average number of passengers per trip?
+14. Which trips recorded the highest passenger counts?
+15. What is the passenger distribution by ticket type?
+16. What is the total passenger count for each station?
+
+Travel Pattern Analysis
+17. How many trips occur during peak, off-peak, festival, and weekend conditions?
+18. Which travel condition generates the highest revenue?
+19. What is the monthly passenger trend across the dataset?
+20. Which travel condition has the highest average passenger count per trip?
+
+
